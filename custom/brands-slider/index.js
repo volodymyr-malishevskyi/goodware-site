@@ -18,8 +18,10 @@ link.rel = 'stylesheet';
 link.href = '/custom/brands-slider/style.css';
 document.head.appendChild(link);
 
-const heroSection = document.querySelector('#hero-section');
-heroSection.insertAdjacentHTML('afterend', template);
+link.onload = () => {
+	const heroSection = document.querySelector('#hero-section');
+	heroSection.insertAdjacentHTML('afterend', template);
 
-let brandsBarSlide = document.querySelector('.brands__slide').cloneNode(true);
-document.querySelector('.brands').appendChild(brandsBarSlide);
+	let brandsBarSlide = document.querySelector('.brands__slide').cloneNode(true);
+	document.querySelector('.brands').appendChild(brandsBarSlide);
+};
