@@ -15,7 +15,7 @@
 .brands {
   overflow: hidden;
   white-space: nowrap;
-  padding: 20px 0;
+  padding: 40px 0;
 }
 
 .brands .brands__slide {
@@ -26,10 +26,14 @@
 .brands .brands__slide img {
   height: 70px;
   max-width: unset;
-  margin: 0 40px;
+  margin: 0 50px;
 }
 
 @media (max-width: 768px) {
+  .brands {
+    padding: 30px 0;
+  }
+
   .brands .brands__slide img {
     height: 50px;
     margin: 0 20px;
