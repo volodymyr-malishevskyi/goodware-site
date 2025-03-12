@@ -288,8 +288,24 @@
     crossorigin="anonymous"></script>
   <script
     src="https://cdn.prod.website-files.com/677273e2fa16e1fb74fe34a0/js/webflow.a883d6b433388f6833f6ff382d281558.js"
-    type="text/javascript"></script><!-- Typed effect  -->
-  <script async>
+    type="text/javascript"></script>
+
+  <!-- Typed effect  -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js">
+  </script>
+  <script>
+    $('#main-typed-text').text('');
+
+    let typed = new Typed('#main-typed-text', {
+      strings: ["Аналіз потреб", "Проектування рішень", "Дизайн сервісів", "Мобайл розробка", "Веб розробка"],
+      startDelay: 0,
+      typeSpeed: 40,
+      backSpeed: 20,
+      backDelay: 1600,
+      loop: true
+    });
+  </script>
+  <!-- <script async>
     var Webflow = Webflow || [];
     if (window.innerWidth > 0) {
       Webflow.push(function () {
@@ -310,7 +326,7 @@
       var typed = $('.typed-div')
       typed.css('display', 'none')
     }
-  </script>
+  </script> -->
 </body>
 
 </html>
