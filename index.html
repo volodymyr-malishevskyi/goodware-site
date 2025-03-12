@@ -296,8 +296,16 @@
   <script>
     $('#main-typed-text').text('');
 
+    const typedStrings = [
+      "Аналіз потреб",
+      "Проектування рішень",
+      "Дизайн сервісів",
+      "Мобайл розробка",
+      "Веб розробка"
+    ]
+
     let typed = new Typed('#main-typed-text', {
-      strings: ["Аналіз потреб", "Проектування рішень", "Дизайн сервісів", "Мобайл розробка", "Веб розробка"],
+      strings: typedStrings,
       startDelay: 0,
       typeSpeed: 40,
       backSpeed: 20,
@@ -305,28 +313,6 @@
       loop: true
     });
   </script>
-  <!-- <script async>
-    var Webflow = Webflow || [];
-    if (window.innerWidth > 0) {
-      Webflow.push(function () {
-        $.getScript('https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js', function () {
-          $('#main-typed-text').text('');
-
-          let typed = new Typed('#main-typed-text', {
-            strings: ["Аналіз потреб", "Проектування рішень", "Дизайн сервісів", "Мобайл розробка", "Веб розробка"],
-            startDelay: 0,
-            typeSpeed: 40,
-            backSpeed: 20,
-            backDelay: 1600,
-            loop: true
-          });
-        });
-      });
-    } else {
-      var typed = $('.typed-div')
-      typed.css('display', 'none')
-    }
-  </script> -->
 </body>
 
 </html>
