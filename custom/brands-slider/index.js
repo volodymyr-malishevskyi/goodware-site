@@ -8,6 +8,8 @@ const template = `
         <img src="/custom/brands-slider/Logo Diia.png" alt="Дія" />
         <img src="/custom/brands-slider/Logo MinDigital.png" alt="МінЦифра" />
         <img src="/custom/brands-slider/Logo Kitsoft.png" alt="KITSOFT" />
+        <img src="/custom/brands-slider/Logo Privat.png" alt="Приват банк" />
+        <img src="/custom/brands-slider/Logo Tretiy Armiyskiy Korpus.png" alt="Третій Армійський Корпус" />
         <img src="/custom/brands-slider/Logo BRDO.png" alt="БРДО" />
       </div>
   </div>
